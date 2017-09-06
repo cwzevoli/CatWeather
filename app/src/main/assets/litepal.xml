@@ -1,0 +1,15 @@
+
+<!--配置数据库   库名：cat_weather-->
+<litepal>
+
+    <dbname value = "cat_weather"></dbname>
+
+    <version value = "1"></version>
+
+    <list>
+        <mapping class = "tp.catweather.db.Province"></mapping>
+        <mapping class = "tp.catweather.db.City"></mapping>
+        <mapping class = "tp.catweather.db.County"></mapping>
+    </list>
+
+</litepal>
