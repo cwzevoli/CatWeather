@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tp.catweather.MainActivity">
+    tools:context="tp.catweather.activity.MainActivity">
 
     <fragment
         android:id="@+id/choose_area_fragment"
