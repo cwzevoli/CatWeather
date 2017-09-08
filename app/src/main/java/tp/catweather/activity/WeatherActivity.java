@@ -1,5 +1,6 @@
 package tp.catweather.activity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -29,6 +30,7 @@ import okhttp3.Response;
 import tp.catweather.R;
 import tp.catweather.gson.Forecast;
 import tp.catweather.gson.Weather;
+import tp.catweather.service.AutoUpdateService;
 import tp.catweather.util.HttpUtil;
 import tp.catweather.util.Utility;
 
@@ -215,6 +217,8 @@ public class WeatherActivity extends AppCompatActivity{
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     /**
